@@ -51,7 +51,7 @@ Adding perspectival information significantly improves performance for the model
 ## Installation
 **REQUIREMENTS** <br>
 
-Write the commands below to your terminal to create a virtual environment, clone repository and install required packages.
+Call the commands below in your terminal to create a virtual environment, clone repository and install required packages.
 
 ```
 conda create -n nlg-with-str-dial python=3.8
