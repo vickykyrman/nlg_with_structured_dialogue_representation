@@ -47,11 +47,17 @@ Write the commands below to your terminal to create a virtual environment, clone
 ```
 conda create -n nlg-with-str-dial python=3.8
 conda activate nlg-with-str-dial
-git clone https://github.com/microsoft/GODEL.git
-cd GODEL
+git clone https://github.com/vickykyrman/nlg_with_structured_dialogue_representation
+cd nlg_with_structured_dialogue_representation
 pip install -r requirements.txt
-export PYTHONPATH="`pwd`"
+
 ```
+
+**For extracting dialogue acts** <br>
+For applying dialogue act classification to each turn we implement code developed by the [CLTL Lab](https://github.com/leolani/cltl-dialogueclassification) at Vrije Universiteit Amsterdam. The code is slightly modified and already included in this repository (see [here](./src/data_utils/perspective_utils/cltl)). <br>
+The code employs the [MIDAS](#yu2019midas) classifier to predict the dialogue acts of each turn. <br>
+Download the MIDAS *classifier.pt* [here](https://vu.data.surfsara.nl/index.php/s/xLou1DPl739Lbq6). <br>
+Place *classifier.pt* inside [.src/data_utils/perspective_utils](.src/data_utils/perspective_utils).
 
 
 
@@ -77,4 +83,7 @@ Banerjee, S., Lavie, A. (2005). *METEOR: An Automatic Metric for MT Evaluation w
 
 <a id="zhang2019bertscore"></a>
 Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q., Artzi, Y. (2019). *Bertscore: Evaluating Text Generation with BERT*. In *arXiv preprint arXiv:1904.09675*. [Link to Paper](https://arxiv.org/pdf/1904.09675.pdf).
+
+<a id="yu2019midas"></a>
+Yu, D., Yu, Z. (2019). *Midas: A Dialog Act Annotation Scheme for Open Domain Human-Machine Spoken Conversations*. In *arXiv preprint arXiv:1908.10023*. [Link to Paper](https://arxiv.org/abs/1908.10023)
 
