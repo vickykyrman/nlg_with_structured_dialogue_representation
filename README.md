@@ -33,7 +33,7 @@ The quantitative scenarios determine the AMOUNT of dialogue history used to trai
 
 **RESULTS** <br>
 
-Evaluating the finetuned models on the automatic metrics we observe that combining a structured with an unstructured representation of the dialogue history (i.e., the COMBINED qualitative scenario) yields the best model performance (see [Figure 3](#non_per_results) <br>
+Evaluating the finetuned models on the automatic metrics we observe that combining a structured with an unstructured representation of the dialogue history (i.e., the COMBINED qualitative scenario) yields the best model performance (see [Figure 3](#non_per_results)) <br>
 <a id="non_per_results"></a>
 <figure>
   <img src="./doc/some_non_per.png" alt="Figure 3" width=700 />
