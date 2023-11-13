@@ -51,7 +51,7 @@ Adding perspectival information significantly improves performance for the model
 ## Installation
 **REQUIREMENTS** <br>
 
-Call the commands below in your terminal to create a virtual environment, clone repository and install required packages.
+Call the commands below in your terminal to create a virtual environment, clone this repository and install required packages.
 
 ```
 conda create -n nlg-with-str-dial python=3.8
@@ -73,7 +73,7 @@ Place *classifier.pt* inside [./src/data_utils/perspective_utils](./src/data_uti
 
 **DATA PREPARATION** <br>
 
-Run the following to preprocess the OpenDialKG dataset, represent data according to the 11 scenarios and split into train and test sets.
+Run the following to preprocess the OpenDialKG dataset, represent data according to the 11 scenarios, extract perspectival information and split into train and test sets.
 ```
 cd src
 python data_main.py
