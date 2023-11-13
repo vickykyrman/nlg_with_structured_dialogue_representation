@@ -13,9 +13,11 @@ evaluation/automatic/automatic_scores
 evaluation/automatic/tables
 evaluation/manual/data
 evaluation/manual/for_annotators
+evaluation/manual/Annotation_Guidelines.docx
 
 #knowledge transfer
 knowledge_transfer/
 
 #dialogue act classifier
 src/data_utils/perspective_utils/classifier.pt
+
