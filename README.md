@@ -25,7 +25,13 @@ The quantitative scenarios determine the AMOUNT of dialogue history used to trai
 - Finally, given that the graphical representation of the dialogue history encapsulates solely factual information, we extract additional perspectival information (i.e., dialogue acts and emotions)from each turn and represent it as graph triples appended to the existing factual triples. Once more, we represent the enhanced dialogue history of each turn based on the different quantitative and qualitative scenarios and retrain the above models on the modified input (see below). Note that this time, we train only the models including structured dialogue information (i.e., triples), since perspective is only represented graphically.
 <img src=./doc/perspective_models.png alt="Image Alt Text" width="800"/> <br>
 - We evaluate the quality of responses using the standardized metrics, [ROUGE](#lin2004rouge), [BLUE](#papineni2002bleu), [METEOR](#banerjee2005meteor) and [BERTSCORE](#zhang2019bertscore).
-- A also conduct a manual evaluation on the predictions using 10 criteria inspired by the principles of the Gricean Maxims. Please find the individual criteria and the annotation guidelines [here](./evaluation/manual/annotation_guidelines.pdf) 
+- A also conduct a manual evaluation on the predictions using 10 criteria inspired by the principles of the Gricean Maxims. Please find the individual criteria and the annotation guidelines [here](./evaluation/manual/annotation_guidelines.pdf)
+
+**Results**
+Evaluating the finetuned models on the automatic metrics we observe that combining a structured with an unstructured representation of the dialogue history (i.e., the COMBINED qualitative scenario) yields the best model performance (see <figure>
+  <img src="images/project_architecture.png" alt="Project Architecture"/>
+  <figcaption>Diagram showing the architecture of the project.</figcaption>
+</figure>). In addition, adding perspectival information improves model performance, especially for those models implementing the STRUCTURED qualitative scenario. 
 
 
 
