@@ -28,13 +28,21 @@ The quantitative scenarios determine the AMOUNT of dialogue history used to trai
 - A also conduct a manual evaluation on the predictions using 10 criteria inspired by the principles of the Gricean Maxims. Please find the individual criteria and the annotation guidelines [here](./evaluation/manual/annotation_guidelines.pdf)
 
 **Results**
-Evaluating the finetuned models on the automatic metrics we observe that combining a structured with an unstructured representation of the dialogue history (i.e., the COMBINED qualitative scenario) yields the best model performance (see <figure>
-  <img src="./doc/some_non_per" alt="Figure 3"/>
+Evaluating the finetuned models on the automatic metrics we observe that combining a structured with an unstructured representation of the dialogue history (i.e., the COMBINED qualitative scenario) yields the best model performance (see Figure 3) <br>
+<figure>
+  <img src="./doc/some_non_per.png" alt="Figure 3" width=600 />
   <figcaption>Figure 3. Performance of the models without perspective triples: RougeL, Bleu, Meteor and f1 BERTScore of the 11 models trained and evaluated on the 11 different qualitative and quantitative scenarios. For every metric the highest scores across models are displayed in green from darker (1st best score) to lighter (3rd best score), while the lowest score is displayed in red. The letter “T” preceding some models on the left-side of the table indicates the best performing model across the quanTitative input scenarios (eg. Godel-Comb-Half outperforms Godel-Comb-One and Godel-Comb-All). The letter "L" indicates the best performing model across the quaLitative input scenarios (eg. Godel-Comb-Half outperforms Godel-Un-Half and Godel-Str-Half).</figcaption>
 </figure>). 
-<img src=./doc/some_non_per alt="Image Alt Text" width="800"/>
 
-In addition, adding perspectival information improves model performance, especially for those models implementing the STRUCTURED qualitative scenario. 
+In addition, adding perspectival information significantly improves performance for the models implementing the STRUCTURED qualitative scenario (i.e., Godel-Str-Per). There is no considerable difference in the performance of the models trained on the COMBINED qualitative scenario (i.e., Godel-Comb-Per). Any slight differences might be a result of stochastic training. <br>
+<figure>
+  <img src="./doc/some_per.png" alt="Figure 3" width=600 />
+  <figcaption>Figure 4. Performance of the models with perspective triples: RougeL, Bleu, Meteor and f1 BERTScore of the 7 models trained and evaluated on the 11 different qualitative and quantitative scenarios. For every metric the highest scores across models are displayed in green from darker (1st best score) to lighter (3rd best score), while the lowest score is displayed in red. The letter “T” preceding some models on the left-side of the table indicates the best performing model across the quanTitative input scenarios (eg. Godel-Comb-Per-Half outperforms Godel-Comb-Per-One and Godel-Comb-Per-All). The letter "L" indicates the best performing model across the quaLitative input scenarios (eg. Godel-Comb-Per-Half outperforms Godel-Un-Per-Half and Godel-Str-Per-Half).</figcaption>
+</figure>). 
+
+
+
+
 
 
 
