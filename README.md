@@ -21,7 +21,7 @@ The quantitative scenarios determine the AMOUNT of dialogue history used to trai
 
 **METHODOLOGY** <br>
 - We generate dialogue responses by employing GODEL [(Peng et al., 2022)](#godel2022), a goal-directed transformer-based language model. (for more information on Godel, please visit the model's github page [here](https://github.com/microsoft/GODEL).) <br>
-- We finetune Godel on the OpenDialKg dataset [(Moon et al., 2019)](#opendialkg), composed by 15K human crowd-sourced goal-driven dialogues on the topics of sports, music, books and music, where each turn is annotated graph triples representing factual knowledge. <br>
+- We finetune Godel on the OpenDialKg dataset [(Moon et al., 2019)](#opendialkg), composed by 15K human crowd-sourced goal-driven dialogues on the topics of sports, mOVIES, books and music, where each turn is annotated graph triples representing factual knowledge. <br>
 - We finetune 11 models (see below) corresponding to the 11 quantitative and qualitative scenarios for representing the dialogue history of each turn. <br>
 <a id="non_per_models"></a>
 <img src=./doc/non_perspective_models.png alt="Image Alt Text" width="800"/> <br>
