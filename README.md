@@ -43,8 +43,8 @@ Lin, C.-Y. (2004). *ROUGE: A Package for Automatic Evaluation of Summaries*. In 
 Papineni, K., Roukos, S., Ward, T., Zhu, W.-J. (2002). *BLEU: A Method for Automatic Evaluation of Machine Translation*. In *Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics*. [Link to Paper](https://aclanthology.org/P02-1040.pdf), pp. 311-318.
 
 <a id="banerjee2005meteor"></a>
-Banerjee, S., Lavie, A. (2005). *METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments*. In *Proceedings of the ACL Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization*. [Link to Paper](#), pp. 65-72.
+Banerjee, S., Lavie, A. (2005). *METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments*. In *Proceedings of the ACL Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization*. [Link to Paper](https://aclanthology.org/W05-0909.pdf), pp. 65-72.
 
 <a id="zhang2019bertscore"></a>
-Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q., Artzi, Y. (2019). *Bertscore: Evaluating Text Generation with BERT*. In *arXiv preprint arXiv:1904.09675*. [Link to Paper](#).
+Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q., Artzi, Y. (2019). *Bertscore: Evaluating Text Generation with BERT*. In *arXiv preprint arXiv:1904.09675*. [Link to Paper](https://arxiv.org/pdf/1904.09675.pdf).
 
