@@ -57,7 +57,7 @@ pip install -r requirements.txt
 For applying dialogue act classification to each turn we implement code developed by the [CLTL Lab](https://github.com/leolani/cltl-dialogueclassification) at Vrije Universiteit Amsterdam. The code is slightly modified and already included in this repository (see [here](./src/data_utils/perspective_utils/cltl)). <br>
 The code employs the [MIDAS](#yu2019midas) classifier to predict the dialogue acts of each turn. <br>
 Download the MIDAS *classifier.pt* [here](https://vu.data.surfsara.nl/index.php/s/xLou1DPl739Lbq6). <br>
-Place *classifier.pt* inside [.src/data_utils/perspective_utils](.src/data_utils/perspective_utils).
+Place *classifier.pt* inside [./src/data_utils/perspective_utils](./src/data_utils/perspective_utils).
 
 
 
