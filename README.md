@@ -29,9 +29,12 @@ The quantitative scenarios determine the AMOUNT of dialogue history used to trai
 
 **Results**
 Evaluating the finetuned models on the automatic metrics we observe that combining a structured with an unstructured representation of the dialogue history (i.e., the COMBINED qualitative scenario) yields the best model performance (see <figure>
-  <img src="images/project_architecture.png" alt="Project Architecture"/>
-  <figcaption>Diagram showing the architecture of the project.</figcaption>
-</figure>). In addition, adding perspectival information improves model performance, especially for those models implementing the STRUCTURED qualitative scenario. 
+  <img src="./doc/some_non_per" alt="Figure 3"/>
+  <figcaption>Figure 3. Performance of the models without perspective triples: RougeL, Bleu, Meteor and f1 BERTScore of the 11 models trained and evaluated on the 11 different qualitative and quantitative scenarios. For every metric the highest scores across models are displayed in green from darker (1st best score) to lighter (3rd best score), while the lowest score is displayed in red. The letter “T” preceding some models on the left-side of the table indicates the best performing model across the quanTitative input scenarios (eg. Godel-Comb-Half outperforms Godel-Comb-One and Godel-Comb-All). The letter "L" indicates the best performing model across the quaLitative input scenarios (eg. Godel-Comb-Half outperforms Godel-Un-Half and Godel-Str-Half).</figcaption>
+</figure>). 
+<img src=./doc/some_non_per alt="Image Alt Text" width="800"/>
+
+In addition, adding perspectival information improves model performance, especially for those models implementing the STRUCTURED qualitative scenario. 
 
 
 
