@@ -107,7 +107,7 @@ cd evaluation/automatic
 python process_automatic_scores.py
 
 ```
-To create annotation files run the folloWing.
+To create annotation files run the following.
 
 ```
 cd evaluation/manual
