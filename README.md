@@ -27,20 +27,31 @@ The quantitative scenarios determine the AMOUNT of dialogue history used to trai
 - We evaluate the quality of responses using the standardized metrics, [ROUGE](#lin2004rouge), [BLUE](#papineni2002bleu), [METEOR](#banerjee2005meteor) and [BERTSCORE](#zhang2019bertscore).
 - A also conduct a manual evaluation on the predictions using 10 criteria inspired by the principles of the Gricean Maxims. Please find the individual criteria and the annotation guidelines [here](./evaluation/manual/annotation_guidelines.pdf)
 
-**Results**
+**Results** <br>
 Evaluating the finetuned models on the automatic metrics we observe that combining a structured with an unstructured representation of the dialogue history (i.e., the COMBINED qualitative scenario) yields the best model performance (see Figure 3) <br>
 <figure>
-  <img src="./doc/some_non_per.png" alt="Figure 3" width=600 />
+  <img src="./doc/some_non_per.png" alt="Figure 3" width=700 />
   <figcaption>Figure 3. Performance of the models without perspective triples: RougeL, Bleu, Meteor and f1 BERTScore of the 11 models trained and evaluated on the 11 different qualitative and quantitative scenarios. For every metric the highest scores across models are displayed in green from darker (1st best score) to lighter (3rd best score), while the lowest score is displayed in red. The letter “T” preceding some models on the left-side of the table indicates the best performing model across the quanTitative input scenarios (eg. Godel-Comb-Half outperforms Godel-Comb-One and Godel-Comb-All). The letter "L" indicates the best performing model across the quaLitative input scenarios (eg. Godel-Comb-Half outperforms Godel-Un-Half and Godel-Str-Half).</figcaption>
 </figure>). 
 
 In addition, adding perspectival information significantly improves performance for the models implementing the STRUCTURED qualitative scenario (i.e., Godel-Str-Per). There is no considerable difference in the performance of the models trained on the COMBINED qualitative scenario (i.e., Godel-Comb-Per). Any slight differences might be a result of stochastic training. <br>
 <figure>
-  <img src="./doc/some_per.png" alt="Figure 3" width=600 />
+  <img src="./doc/some_per.png" alt="Figure 3" width=700 />
   <figcaption>Figure 4. Performance of the models with perspective triples: RougeL, Bleu, Meteor and f1 BERTScore of the 7 models trained and evaluated on the 11 different qualitative and quantitative scenarios. For every metric the highest scores across models are displayed in green from darker (1st best score) to lighter (3rd best score), while the lowest score is displayed in red. The letter “T” preceding some models on the left-side of the table indicates the best performing model across the quanTitative input scenarios (eg. Godel-Comb-Per-Half outperforms Godel-Comb-Per-One and Godel-Comb-Per-All). The letter "L" indicates the best performing model across the quaLitative input scenarios (eg. Godel-Comb-Per-Half outperforms Godel-Un-Per-Half and Godel-Str-Per-Half).</figcaption>
 </figure>). 
 
+## Installation
+**Requirements** <br>
+Write the commands below to your terminal to create a virtual environment, clone repository and install required packages.
 
+```
+conda create -n nlg-with-str-dial python=3.8
+conda activate nlg-with-str-dial
+git clone https://github.com/microsoft/GODEL.git
+cd GODEL
+pip install -r requirements.txt
+export PYTHONPATH="`pwd`"
+```
 
 
 
