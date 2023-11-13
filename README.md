@@ -8,7 +8,7 @@ Our primary goal is to explore the impact of structured dialogue representation 
 **Methodology** <br>
 - We generate dialogue responses by employing GODEL [(Peng et al., 2022)](#godel2022), a goal-directed transformer-based language model. (for more information on Godel, please visit the model's github page [here](https://github.com/microsoft/GODEL).) <br>
 - We finetune Godel on the OpenDialKg dataset [(Moon et al., 2019)](#opendialkg), composed by 15K human crowd-sourced goal-driven dialogues on the topics of sports, music, books and music, where each turn is annotated with factual knowledge triples. <br>
-- We produce 11 models corresponding to the 11 quantitative and qualitative scenarios for representing the dialogue history of turn. [image](./doc <br>
+- We produce 11 models corresponding to the 11 quantitative and qualitative scenarios for representing the dialogue history of turn. [image](./doc/non_perspective_models.png) <br>
 - The response quality of each model is evaluated on the basis of 4 automatic metrics, namely ROUGE, BLUE, METEOR and METRIC. A manual evaluation is conducted overhead inspired by the principles of the Gricean Maxims. Finally, given that the graphical representation of the dialogue history encapsulates solely factual information, additional perspectival information is extracted from the dataset and represented graphically. The enhanced graphs are then used to train a 12th model, in order to investigate the impact of a more holistic and informative graphical structural representation on model performance, and specifically on its ability to express perspectival information.
 
 
