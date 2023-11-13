@@ -113,7 +113,7 @@ cd evaluation/manual
 python create_annotation_files.py
 
 ```
-To annotate open [Annotation_tool.ipynb](./evaluation/manual/Annoation_tool.ipynb) and follow the instructions inside the notebook.
+To annotate open [Annotation_tool.ipynb](./evaluation/manual/Annotation_tool.ipynb) and follow the instructions inside the notebook.
 
 ## References
 <a id="godel2022"></a>
