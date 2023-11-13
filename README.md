@@ -29,7 +29,7 @@ The quantitative scenarios determine the AMOUNT of dialogue history used to trai
 <a id="per_models"></a>
 <img src=./doc/perspective_models.png alt="Image Alt Text" width="800"/> <br>
 - We evaluate the quality of responses using the standardized metrics, [ROUGE](#lin2004rouge), [BLUE](#papineni2002bleu), [METEOR](#banerjee2005meteor) and [BERTSCORE](#zhang2019bertscore).
-- A also conduct a manual evaluation on the predictions using 10 criteria inspired by the principles of the Gricean Maxims. Please find the individual criteria and the annotation guidelines [here](./evaluation/manual/annotation_guidelines.pdf)
+- We also conduct a manual evaluation on the predictions using 10 criteria inspired by the principles of the Gricean Maxims. Please find the individual criteria and the annotation guidelines [here](./evaluation/manual/annotation_guidelines.pdf)
 
 **RESULTS** <br>
 
